@@ -15,14 +15,22 @@ main.js:
 ## usage
 
 	// sepecific which route needs to update data
-	// paths will be pushed to a array
+	// paths will be pushed to an Array
 	
 	this.$pushToUpdate('/foo')
 
-in /foo:
+in foo.vue:
 
-	update(vm){
-		// do something
-		vm.msg = 'foo'
-		// once it's triggerd, '/foo' will be removed from the list
+	export default {
+		data(){
+			return {
+				msg: ''
+			}
+		}
+	  update(vm){
+		  // do something
+		  vm.msg = 'foo'
+		  // once it's triggerd, '/foo' will be removed from the list
+	  }		
 	}
+
