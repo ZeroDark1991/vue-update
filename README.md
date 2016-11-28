@@ -21,10 +21,10 @@ main.js:
 
 in foo.vue:
 
-	export default {
+  export default {
     data(){
       return {
-	      msg: ''
+        msg: ''
       }
     },
     update(vm){
@@ -32,5 +32,5 @@ in foo.vue:
       vm.msg = 'foo'
       // once it's triggerd, '/foo' will be removed from the list
     }		
-	}
+  }
 
