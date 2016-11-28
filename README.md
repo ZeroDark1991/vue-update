@@ -20,6 +20,7 @@ main.js:
 	this.$pushToUpdate('/foo')
 
 in /foo:
+
 	update(vm){
 		// do something
 		vm.msg = 'foo'
