@@ -9,10 +9,9 @@
 			}
 		},
 		created(){
-      this.$pushToUpdate('/foo')
 		},
-		update(vm) {
-      vm.msg = 'it works -- foo -->'+ Date.now()
+		update() {
+      this.msg = 'it works -- foo -->'+ Date.now()
 		},
 		beforeRouteEnter(to, from, next) {
       next(vm => console.log('mix works fine'))

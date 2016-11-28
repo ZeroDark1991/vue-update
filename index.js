@@ -6,6 +6,7 @@
 		Vue.prototype.$pushToUpdate = function(path){
 			if(!ifExists(path)){
         updateList.push(path)
+        console.log('pushed'+ path)
 			}
 		}
 
@@ -37,7 +38,7 @@
         	if(Object.prototype.toString.call(cb) === '[object Function]'){
         		var path = vm.$route.path
             if(ifExists(path)){
-            	cb(vm)
+            	cb.bind(vm)()
             	// remove from updateList after updated
             	updateList.splice(updateList.indexOf(path),1)
             }

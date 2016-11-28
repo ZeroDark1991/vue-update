@@ -1,6 +1,6 @@
 {
   "name": "vue-update",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "provide hook for data-updating",
   "main": "index.js",
   "author": "ZeroDark1991",
