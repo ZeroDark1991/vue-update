@@ -1,0 +1,13 @@
+{
+  "name": "vue-update",
+  "version": "1.0.1",
+  "description": "provide hook for data-updating",
+  "main": "index.js",
+  "author": "ZeroDark1991",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "data",
+    "update"
+  ]
+}
