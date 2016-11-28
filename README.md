@@ -22,15 +22,15 @@ main.js:
 in foo.vue:
 
 	export default {
-		data(){
-			return {
-				msg: ''
-			}
-		}
-	  update(vm){
-		  // do something
-		  vm.msg = 'foo'
-		  // once it's triggerd, '/foo' will be removed from the list
-	  }		
+    data(){
+      return {
+	      msg: ''
+      }
+    },
+    update(vm){
+      // do something
+      vm.msg = 'foo'
+      // once it's triggerd, '/foo' will be removed from the list
+    }		
 	}
 
