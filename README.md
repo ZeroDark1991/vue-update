@@ -1,8 +1,9 @@
 requires Vuejs 2.0
+
 works with vue-router
 ## Install
 ```
-	$ npm install vue-update vue-router --save-dev
+	$ npm install vue-update --save-dev
 ```
 main.js:
 ```js
@@ -22,7 +23,7 @@ in bar.vue
 	// paths will be pushed to an Array
 	
 	this.$pushToUpdate('/foo')
-```js
+```
 
 in foo.vue:
 ```js
