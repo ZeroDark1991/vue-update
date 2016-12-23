@@ -6,7 +6,6 @@
 		Vue.prototype.$pushToUpdate = function(path){
 			if(!ifExists(path)){
         updateList.push(path)
-        console.log('pushed'+ path)
 			}
 		}
 
