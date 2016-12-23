@@ -29,8 +29,8 @@ main.js:
 ## usage
 see /example
 ```
-  npm install
-  npm run dev
+  $ npm install
+  $ npm run dev
 ```
 in bar.vue:
 
