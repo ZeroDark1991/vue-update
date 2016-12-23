@@ -11,7 +11,7 @@
 
     function ifExists(path){
     	var checkResult = updateList.some(function(item){
-    		return item === path
+    		return item === path || item === path.replace(/\//,'')
     	})
     	return checkResult
     }
