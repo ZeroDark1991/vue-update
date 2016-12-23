@@ -1,10 +1,12 @@
-Requires Vuejs 2.0 && Works with vue-router
+### Requires Vuejs 2.0
 
-Use ```js this.$pushToUpdate('/foo') ``` to push a route path into the updateQueue.
+Must works with vue-router
 
-Then write the code you want to excute in the hook ```js update(){} ``` which triggers when the current route matches anyone in the updateQueue.
+Use ``` this.$pushToUpdate('/foo') ``` to push a route path into the updateQueue.
 
-You can use it to manually control whether data should be updated when route enters, or do some other things.
+Then write the code you want to excute in the hook ``` update(){} ``` which triggers when the current route matches anyone in the updateQueue.
+
+You can use it to manually control whether data should be updated when route enters, or do some things else.
 
 It can be helpful in some cases especially in 'keep-alive' mode.
 
@@ -24,9 +26,14 @@ main.js:
 
 ## usage
 see /example
-
+```
+  npm install
+  npm run dev
+```
 in bar.vue:
+
 You can push the ref of the target route (which should do something when enters) into a queue
+
 ```js
 	// sepecific which route needs to update data
 	// paths will be pushed to an Array
@@ -38,7 +45,9 @@ You can push the ref of the target route (which should do something when enters)
 ```
 
 in foo.vue:
+
 Here the update hook function will invoke if the update queue contains this route
+
 ```js
 	export default {
       data(){
