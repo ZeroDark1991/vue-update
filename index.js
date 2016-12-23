@@ -13,7 +13,6 @@
     	var checkResult = updateList.some(function(item){
     		return item === path
     	})
-
     	return checkResult
     }
   
