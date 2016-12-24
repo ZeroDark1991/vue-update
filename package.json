@@ -1,9 +1,13 @@
 {
   "name": "vue-update",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "provides extra hook for data-updating",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZeroDark1991/vue-update.git"
+  },
   "main": "index.js",
-  "author": "ZeroDark1991",
+  "author": "Vincent Xu",
   "license": "MIT",
   "keywords": [
     "vue",
