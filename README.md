@@ -1,4 +1,4 @@
-# vue-update [![npm package](https://img.shields.io/npm/v/vue-update.svg)](https://www.npmjs.com/package/vue-update)
+# vue-update [![npm package](https://img.shields.io/npm/v/vue-update.svg)](https://www.npmjs.com/package/vue-update)<a href="https://www.npmjs.com/package/vue-update"><img src="https://img.shields.io/npm/dt/vue-update.svg" alt="Downloads"></a>
 
 
 > Requires Vuejs 2.0
@@ -35,12 +35,11 @@ Use ``` this.$pushToUpdate('/foo') ``` to push a route path into the updateQueue
 In bar.vue:
 
 ```js
-	// sepecific which route needs to update data
-	// paths will be pushed to an Array
+	// push the route which needs to update
 	
 	this.$pushToUpdate('/foo')
 	
-	// or you can pass the route name
+	// you can also pass the route name
 	this.$pushToUpdate('foo')
 ```
 

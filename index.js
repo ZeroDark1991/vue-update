@@ -38,7 +38,8 @@
             if(ifExists(path)){
             	cb.bind(vm)()
             	// remove from updateList after updated
-            	updateList.splice(updateList.indexOf(path),1)
+              updateList.splice(updateList.indexOf(path),1)
+            	updateList.splice(updateList.indexOf(path.replace(/\//,'')),1)
             }
         	}else{
         		warn(
